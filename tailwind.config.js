@@ -3,8 +3,18 @@ module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
     extend: {
+      colors: {
+        F5F5F5: "#F5F5F5", // Özelleştirilmiş gradyan
+        DB4444: "#DB4444",
+        F5F5F5:"#F5F5F5",
+        "00FF66":"#00FF66",
+      },
       backgroundColor: {
         F5F5F5: "#F5F5F5", // Özelleştirilmiş gradyan
+        DB4444: "#DB4444",
+        "00FF66":"#00FF66",
+        D9D9D9:"#D9D9D9",
+        "0D0D0D":"#0D0D0D",
       },
       spacing: {
         "dynamic-gap": "clamp(16px, 5vw, 48px)", // Min: 16px, Orta: 5% genişlik, Max: 48px
