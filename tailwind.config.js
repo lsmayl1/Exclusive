@@ -15,6 +15,7 @@ module.exports = {
         "00FF66":"#00FF66",
         D9D9D9:"#D9D9D9",
         "0D0D0D":"#0D0D0D",
+        "2F2E30":"#2F2E30"
       },
       spacing: {
         "dynamic-gap": "clamp(16px, 5vw, 48px)", // Min: 16px, Orta: 5% genişlik, Max: 48px

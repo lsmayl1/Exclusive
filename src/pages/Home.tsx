@@ -9,6 +9,8 @@ import { Category } from "../components/Category";
 import { CategoriesAds } from "../components/CategoriesAds";
 import OurProducts from "../components/OurProducts";
 import { Featured } from "../components/Featured";
+import { Services } from "../components/Services";
+import { Footer } from "../components/Footer";
 function Home() {
   return (
     <>
@@ -35,7 +37,7 @@ function Home() {
         border={false}
       />
       <CategoriesAds />
-    
+
       <OurProducts
         text="This Month"
         timer={false}
@@ -44,7 +46,9 @@ function Home() {
         discountElement={false}
         border={true}
       />
-      <Featured/>
+      <Featured />
+      <Services />
+      <Footer/>
     </>
   );
 }
