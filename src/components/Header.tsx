@@ -91,7 +91,7 @@ function Header() {
             </div>
 
             <div className="flex items-center  gap-[16px]">
-              <div className="">
+              <div className="ml-4">
                 <NavLink to={"/wishlist"}>
                   <svg
                     width="22"
@@ -179,7 +179,7 @@ function Header() {
                 </button>
                 <div
                   style={{ backdropFilter: "blur(50px)" }}
-                  className="absolute hidden group-hover:block right-0 bg-black bg-opacity-[4%] z-10 w-[224px] h-[220px] rounded-[4px] "
+                  className="absolute hidden group-hover:block right-0 bg-black bg-opacity-[20%] z-10 w-[224px] h-[220px] rounded-[4px] "
                 >
                   <ul
                     className="pt-[20px]
