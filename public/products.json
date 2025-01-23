@@ -1,0 +1,292 @@
+{
+	"product": [
+		{
+			"id": 1,
+			"name": "HAVIT HV-G92 Gamepad",
+			"rating": {
+				"stars": 5,
+				"reviews": 88
+			},
+			"price": 160,
+			"discount": 40,
+			"stock": 4,
+			"colors": [],
+			"sizes": ["S", "M", "XL"],
+			"images": ["/images/Gamepad.png"],
+			"new": false
+		},
+		{
+			"id": 2,
+			"name": "AK-900 Wired Keyboard",
+			"rating": {
+				"stars": 4,
+				"reviews": 75
+			},
+			"price": 1160,
+			"discount": 35,
+			"stock": 4,
+			"colors": [
+				],
+			"sizes": [],
+			"images": ["/images/keyboard.png"],
+			"new": false
+		},
+		{
+			"id": 3,
+			"name": "IPS LCD Gaming Monitor",
+			"rating": {
+				"stars": 5,
+				"reviews": 99
+			},
+			"price": 400,
+			"discount": 30,
+			"stock": 4,
+			"colors": [],
+			"sizes": ["S", "M", "XL"],
+			"images": ["/images/Monitor.png"],
+			"new": false
+		},
+		{
+			"id": 4,
+			"name": "S-Series Comfort Chair",
+			"rating": {
+				"stars": 4.5,
+				"reviews": 99
+			},
+			"price": 400,
+			"discount":25,
+			"stock": 4,
+			"colors": [],
+			"sizes": ["S", "M", "XL"],
+			"images": ["/images/Chair.png"],
+			"new": false
+		},
+		{
+			"id": 5,
+			"name": "Breed Dry Dog Food",
+			"rating": {
+				"stars": 3,
+				"reviews": 35
+			},
+			"price": 100,
+			"discount":false,
+			"stock": 4,
+			"colors": [],
+			"sizes": ["S", "M", "XL"],
+			"images": ["/images/dogmeat.png"],
+			"new": false
+		},
+		{
+			"id": 6,
+			"name": "The north coat",
+			"rating": {
+				"stars": 5,
+				"reviews": 65
+			},
+			"price": 360,
+			"discount":25,
+			"stock": 4,
+			"colors": [],
+			"sizes": ["S", "M", "XL"],
+			"images": ["/images/northcoat.png"],
+			"new": false
+		}
+		,
+		{
+			"id": 7,
+			"name": "Gucci duffle bag",
+			"rating": {
+				"stars": 5,
+				"reviews": 65
+			},
+			"price": 1160,
+			"discount":25,
+			"stock": 4,
+			"colors": [],
+			"sizes": ["S", "M", "XL"],
+			"images": ["/images/guccibag.png"],
+			"new": false
+		}
+		,
+		{
+			"id": 8,
+			"name": "RGB liquid CPU Cooler",
+			"rating": {
+				"stars": 5,
+				"reviews": 65
+			},
+			"price": 170,
+			"discount":25,
+			"stock": 4,
+			"colors": [],
+			"sizes": ["S", "M", "XL"],
+			"images": ["/images/Cooler.png"],
+			"new": false
+		}
+		,
+		{
+			"id": 9,
+			"name": "Small BookSelf",
+			"rating": {
+				"stars": 5,
+				"reviews": 65
+			},
+			"price": 360,
+			"discount":25,
+			"stock": 4,
+			"colors": [],
+			"sizes": ["S", "M", "XL"],
+			"images": ["/images/Bookself.png"],
+			"new": false
+		}
+		,
+		{
+			"id": 10,
+			"name": "CANON EOS DSLR Camera",
+			"rating": {
+				"stars": 4,
+				"reviews": 95
+			},
+			"price": 560,
+			"discount":25,
+			"stock": 4,
+			"colors": [],
+			"sizes": ["S", "M", "XL"],
+			"images": ["/images/camera.png"],
+			"new": false
+		}
+		,
+		{
+			"id": 11,
+			"name": "ASUS FHD Gaming Laptop",
+			"rating": {
+				"stars": 5,
+				"reviews": 325
+			},
+			"price": 960,
+			"discount":false,
+			"stock": 4,
+			"colors": [],
+			"sizes": ["S", "M", "XL"],
+			"images": ["/images/laptop.png"],
+			"new": false
+		}
+		,
+		{
+			"id": 12,
+			"name": "Curology Product Set ",
+			"rating": {
+				"stars": 4,
+				"reviews": 145
+			},
+			"price": 500,
+			"discount":false,
+			"stock": 4,
+			"colors": [],
+			"sizes": ["S", "M", "XL"],
+			"images": ["/images/curology-j7pKVQrTUsM-unsplash 1.png"],
+			"new": false
+		}
+		,
+		{
+			"id": 13,
+			"name": "Kids Electric Car",
+			"rating": {
+				"stars": 5,
+				"reviews": 65
+			},
+			"price": 960,
+			"discount":false,
+			"stock": 4,
+			"colors": [{"name":"black","hex":"#000"},{"name":"red","hex":"#DB4444"}],
+			"sizes": ["S", "M", "XL"],
+			"images": ["/images/New-Mercedes-Benz-Gtr-Licensed-Ride-on-Car-Kids-Electric-Toy-Car 1.png"],
+			"new": true
+		}
+		,
+		{
+			"id": 14,
+			"name": "Jr. Zoom Soccer Cleats",
+			"rating": {
+				"stars": 5,
+				"reviews": 35
+			},
+			"price": 1160,
+			"discount":false,
+			"stock": 4,
+			"colors": [{"name":"Yellow","hex":"#EEFF61"},{"name":"red","hex":"#DB4444"}],
+			"sizes": ["S", "M", "XL"],
+			"images": ["/images/kranpon.png"],
+			"new": false
+		}
+		,
+		{
+			"id": 15,
+			"name": "GP11 Shooter USB Gamepad",
+			"rating": {
+				"stars": 5,
+				"reviews": 55
+			},
+			"price": 660,
+			"discount":false,
+			"stock": 4,
+			"colors": [{"name":"black","hex":"#000"},{"name":"red","hex":"#DB4444"}],
+			"sizes": ["S", "M", "XL"],
+			"images": ["/images/GP11_PRD3 1.png"],
+			"new": true
+		}
+		,
+		{
+			"id": 16,
+			"name": "Quilted Satin Jacket",
+			"rating": {
+				"stars": 5,
+				"reviews": 55
+			},
+			"price": 660,
+			"discount":false,
+			"stock": 4,
+			"colors": [{"name":"none","hex":"#184A48"},{"name":"red","hex":"#DB4444"}],
+			"sizes": ["S", "M", "XL"],
+			"images": ["/images/698717_Z8A1X_3475_001_100_0000_Light-Reversible-quilted-satin-jacket 1.png"],
+			"new": true
+		}
+	],
+	"category":[
+		{
+			"name":"Phones",
+			"icon":"./icons/Category/Category-CellPhone.svg"
+		},
+		{
+			"name":"Computers",
+			"icon":"./icons/Category/Category-Computer.svg"
+			  
+		}
+		,
+		{
+			"name":"SmartWatch",
+			"icon":"./icons/Category/Category-SmartWatch.svg"
+			  
+		}
+		,
+		{
+			"name":"Camera",
+			"icon":"./icons/Category/Category-Camera.svg"
+			  
+		}
+		,
+		{
+			"name":"HeadPhones",
+			"icon":"./icons/Category/Category-Headphone.svg"
+			  
+		}
+		,
+		{
+			"name":"Gaming",
+			"icon":"./icons/Category/Category-Gamepad.svg"
+			  
+		}
+	
+	
+	]
+}

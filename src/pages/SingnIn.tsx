@@ -1,4 +1,3 @@
-import React from "react";
 
 import { SignInSection } from "../components/SignInSection";
 import TopHeader from "../components/TopHeader";

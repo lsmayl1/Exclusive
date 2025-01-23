@@ -1,4 +1,3 @@
-import React from "react";
 import Breadcrumb from "./Breadcrumb";
 import heroimg from "../assets/images/portrait-two-african-females-holding-shopping-bags-while-reacting-something-their-smartphone 1.png";
 import tom from "../assets/images/image 46.png";

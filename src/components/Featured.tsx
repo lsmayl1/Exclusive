@@ -1,4 +1,3 @@
-import React from "react";
 import ps5 from "../assets/images/ps5-slim-goedkope-playstation_large 1.png";
 import womencollection from "../assets/images/attractive-woman-wearing-hat-posing-black-background 1.png";
 import speakers from "../assets/images/speaker.png";
@@ -49,7 +48,7 @@ export const Featured = () => {
             <div>
               <img src={womencollection} alt="" />
             </div>
-            <div className="absolute   bottom-0 left-0 text-white w-[280px] pl-[32px] pb-[32px] w-[252px]">
+            <div className="absolute   bottom-0 left-0 text-white pl-[32px] pb-[32px] w-[252px]">
               <h1 className="font-inter font-semibold text-[24px] pb-[10px]">
                 Women’s Collections
               </h1>

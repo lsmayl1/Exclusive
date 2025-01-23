@@ -1,5 +1,3 @@
-import React from "react";
-import Cards from "./Cards";
 import bag from "../assets/images/GucciBag.png";
 interface Card {
   title: string;
@@ -47,7 +45,7 @@ export const WishListSection = () => {
         </button>
       </div>
       <div className="mt-[60px] flex gap-[30px] ">
-        {cardDetails.slice(0,4).map((card, index) => {
+        {cardDetails.slice(0, 4).map((card, index) => {
           return (
             <div key={index}>
               <div className="Card">
@@ -96,7 +94,7 @@ export const WishListSection = () => {
                 </div>
                 <div>
                   <div className="flex flex-col gap-[8px]">
-                    <h1 className="text-black font-poppins font-medium font-[16px] mt-[5px]">
+                    <h1 className="text-black font-poppins font-medium  mt-[5px]">
                       {card.title}
                     </h1>
                     <div className="flex gap-[12px]">
@@ -178,7 +176,7 @@ export const WishListSection = () => {
                   </div>
                   <div>
                     <div className="flex flex-col gap-[8px]">
-                      <h1 className="text-black font-poppins font-medium font-[16px] mt-[5px]">
+                      <h1 className="text-black font-poppins font-medium  mt-[5px]">
                         {card.title}
                       </h1>
                       <div className="flex gap-[12px]">

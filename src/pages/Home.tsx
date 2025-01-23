@@ -1,4 +1,3 @@
-import React from "react";
 import "../assets/css/index.css";
 import "../assets/css/Global.css";
 import TopHeader from "../components/TopHeader";
@@ -7,7 +6,6 @@ import Hero from "../components/Hero";
 import Cards from "../components/Cards";
 import { Category } from "../components/Category";
 import { CategoriesAds } from "../components/CategoriesAds";
-import OurProducts from "../components/OurProducts";
 import { Featured } from "../components/Featured";
 import { Services } from "../components/Services";
 import { Footer } from "../components/Footer";
@@ -16,39 +14,49 @@ function Home() {
     <>
       <TopHeader />
       <Header />
+
       <Hero />
+
       <Cards
-        isnew={false}
+        wrap="nowrap"
+        cardcount={{ start: 0, stop: 10 }}
         text="Today`s"
         timer={true}
         carousel={true}
         vapbutton={true}
-        discountElement={true}
         border={false}
+        subtext="Flash Sales"
       />
+      
       <Category />
+
       <Cards
-        isnew={false}
+        wrap="nowrap"
         text="This Month"
         timer={false}
-        carousel={false}
+        subtext={"Best Selling Products"}
+        carousel={true}
         vapbutton={false}
-        discountElement={false}
         border={false}
+        cardcount={{ start: 0, stop: 4 }}
       />
       <CategoriesAds />
 
-      <OurProducts
-        text="This Month"
+      <Cards
+        wrap="wrap"
+        text="Our Products"
         timer={false}
-        carousel={false}
+        subtext={"Explore Our Products"}
+        carousel={true}
         vapbutton={true}
-        discountElement={false}
-        border={true}
+        border={false}
+        cardcount={{ start: 8, stop: 16 }}
       />
+
       <Featured />
+
       <Services />
-      <Footer/>
+      <Footer />
     </>
   );
 }

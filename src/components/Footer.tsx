@@ -1,4 +1,3 @@
-import React from "react";
 import qrcode from "../assets/images/Qrcode 1.png";
 import playstote from "../assets/images/png-transparent-google-play-store-logo-google-play-app-store-android-wallets-text-label-logo.png";
 import appstore from "../assets/images/download-appstore.png";
@@ -62,7 +61,9 @@ export const Footer = () => {
           </ul>
         </div>
         <div className="flex flex-col gap-[16px] ">
-          <h1 className="font-inter font-bold text-[24px] whitespace-nowrap">Quick Link</h1>
+          <h1 className="font-inter font-bold text-[24px] whitespace-nowrap">
+            Quick Link
+          </h1>
           <ul className="font-poppins font-normal text-[16px] text-white gap-[16px] flex flex-col">
             <li>Privacy Policy</li>
             <li>Terms Of Use</li>
@@ -193,7 +194,9 @@ export const Footer = () => {
           />
         </svg>
 
-        <h1 className="font-poppins ">Copyright Rimel 2022. All right reserved</h1>
+        <h1 className="font-poppins ">
+          Copyright Rimel 2022. All right reserved
+        </h1>
       </div>
     </div>
   );

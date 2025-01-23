@@ -1,4 +1,3 @@
-import React from "react";
 import beatsnoop from "../assets/images/dl.beatsnoop 1.png";
 import { NavLink } from "react-router-dom";
 
@@ -74,7 +73,7 @@ export const SignInSection = () => {
           <h1 className="text-black font-poppins">
             Dont have account?{" "}
             <span className=" ml-[16px] underline font-poppins font-medium underline-offset-4">
-            <NavLink to={"/signup"}>SignUp</NavLink>
+              <NavLink to={"/signup"}>SignUp</NavLink>
             </span>
           </h1>
         </div>

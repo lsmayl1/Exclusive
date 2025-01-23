@@ -1,4 +1,3 @@
-import React from "react";
 
 import beatsnoop from "../assets/images/dl.beatsnoop 1.png";
 import { NavLink } from "react-router-dom";

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import Breadcrump from "./Breadcrumb.tsx";
 import monitor from "../assets/images/g27cq4-500x500 1.png";
 import { NavLink } from "react-router-dom";

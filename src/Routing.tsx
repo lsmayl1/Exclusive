@@ -1,4 +1,3 @@
-import React from "react";
 import { Route, Routes } from "react-router-dom";
 import Home from "./pages/Home";
 import { SignUp } from "./pages/SignUp";
@@ -10,6 +9,7 @@ import Account from "./pages/Account";
 import About from "./pages/About";
 import { Contact } from "./pages/Contact";
 import { NotFoundPage } from "./pages/NotFoundPage";
+import { ProductDetails } from "./pages/ProductDetails";
 
 function Routing() {
   return (
@@ -23,6 +23,8 @@ function Routing() {
       <Route path="/account" element={<Account />} />
       <Route path="/about" element={<About />} />
       <Route path="/contact" element={<Contact />} />
+      <Route path="/product/:id" element={<ProductDetails />} />
+
       <Route path="*" Component={NotFoundPage} />
     </Routes>
   );

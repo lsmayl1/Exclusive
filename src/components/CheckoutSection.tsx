@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import Breadcrumb from "./Breadcrumb";
 import gamepad from "../assets/images/Gamepad.png";
 import visa from "../assets/images/Visa.png";
@@ -243,8 +243,8 @@ export const CheckoutSection = () => {
                 </button>
               </div>
               <button className="w-[190px] h-[56px] rounded-[4px] border font-poppins font-medium bg-DB4444 text-white">
-                  Place Order
-                </button>
+                Place Order
+              </button>
             </div>
           </div>
         </div>
