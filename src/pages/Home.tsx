@@ -11,8 +11,9 @@ import { Services } from "../components/Services";
 import { Footer } from "../components/Footer";
 function Home() {
   return (
-    <>
+    <div className=" border border-black">
       <TopHeader />
+
       <Header />
 
       <Hero />
@@ -27,7 +28,7 @@ function Home() {
         border={false}
         subtext="Flash Sales"
       />
-      
+
       <Category />
 
       <Cards
@@ -35,11 +36,12 @@ function Home() {
         text="This Month"
         timer={false}
         subtext={"Best Selling Products"}
-        carousel={true}
+        carousel={false}
         vapbutton={false}
         border={false}
         cardcount={{ start: 0, stop: 4 }}
       />
+
       <CategoriesAds />
 
       <Cards
@@ -52,12 +54,13 @@ function Home() {
         border={false}
         cardcount={{ start: 8, stop: 16 }}
       />
-
+     
       <Featured />
-
+ 
       <Services />
+
       <Footer />
-    </>
+    </div>
   );
 }
 

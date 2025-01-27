@@ -3,8 +3,8 @@ import Carousel from "./Carousel";
 function Hero() {
   return (
     <>
-      <div className="container flex ">
-        <div className="category border-r h-[400px] ">
+      <div className="md:container flex justify-between ">
+        <div className="category border-r max-md:hidden  ">
           <div className="mt-[40px] w-[217px] mr-[25px]">
             <ul className="flex flex-col gap-[13px] font-poppins leading-[24px] text-[16px] text-black">
               <li className="flex items-center justify-between relative group ">
@@ -154,7 +154,9 @@ function Hero() {
             </ul>
           </div>
         </div>
-        <Carousel />
+        
+          <Carousel />
+        
       </div>
     </>
   );
