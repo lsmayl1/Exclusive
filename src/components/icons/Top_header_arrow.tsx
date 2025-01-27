@@ -1,4 +1,3 @@
-import React from "react";
 
 export const Top_header_arrow = ({ prop }: any) => {
   return (

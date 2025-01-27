@@ -3,7 +3,6 @@ import { NavLink } from "react-router-dom";
 import axios from "axios";
 
 import { RatingStar } from "./RatingStar";
-import { ReactSVG } from "react-svg";
 import { CartHeart, CartView } from "./icons/CartsElments";
 
 interface product {

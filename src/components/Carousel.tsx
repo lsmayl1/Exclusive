@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import iphone from "../assets/images/Iphone_14.png";
 import AppleLogo from "../assets/images/AppleLogo.png";
 import { NavLink } from "react-router-dom";
-import { ReactSVG } from "react-svg";
 import { ShopNowArrow } from "./icons/ShopNowArrow";
 function Carousel() {
   const [currentIndex, setCurrentIndex] = useState(0);
