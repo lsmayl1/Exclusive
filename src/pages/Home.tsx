@@ -9,7 +9,6 @@ import { CategoriesAds } from "../components/CategoriesAds";
 import { Featured } from "../components/Featured";
 import { Services } from "../components/Services";
 import { Footer } from "../components/Footer";
-import { Menu } from "../components/Menu";
 function Home() {
   return (
     <div className="">

@@ -1,5 +1,5 @@
 import axios from "axios";
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { MenuArrow } from "./icons/MenuArrow";
 type Category = {
   id: number;
