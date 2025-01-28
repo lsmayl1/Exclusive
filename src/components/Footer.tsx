@@ -5,7 +5,7 @@ import { ReactSVG } from "react-svg";
 export const Footer = () => {
   return (
     <div className="w-full bg-black  mt-[140px] flex justify-between flex-col ">
-      <div className="px-[135px] pt-[80px]  flex gap-[87px]  flex-wrap max-lg:gap-[40px] max-xs:gap-5">
+      <div className="px-[135px] pt-[80px] justify-center flex gap-[87px]  flex-wrap max-lg:gap-[40px] max-xs:gap-5">
         <div className="flex flex-col gap-[16px] max-xs:gap-2">
           <h1 className="font-inter font-bold text-[24px] max-xs:text-[20px]">Exclusive</h1>
           <h2 className="font-poppins font-medium text-[20px] max-xs:text-[16px]  text-white">

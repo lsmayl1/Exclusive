@@ -2,7 +2,17 @@ import { NavLink } from "react-router-dom";
 import { ReactSVG } from "react-svg";
 import { IoMenu } from "react-icons/io5";
 import { Header_user } from "./icons/Header_user";
+import { useEffect, useState } from "react";
+import { IoMdArrowRoundBack } from "react-icons/io";
+import axios from "axios";
+import { Menu } from "./Menu";
+
 function Header() {
+  const [dropDown, setDropDown] = useState(false);
+
+  const handledropdown = () => {
+    setDropDown(!dropDown);
+  };
   return (
     <>
       <div className="border-b pb-4 pt-10 flex flex-col gap-[40px]">
@@ -99,7 +109,7 @@ function Header() {
             <div className="flex items-center  gap-[16px] max-lg:gap-[5px]">
               <div className="group relative items-center flex">
                 <button>
-                 <Header_user prop={"max-sm:w-8"}/>
+                  <Header_user prop={"max-sm:w-8"} />
                 </button>
                 <div
                   style={{ backdropFilter: "blur(50px)" }}
@@ -161,9 +171,10 @@ function Header() {
         </div>
 
         <div className="hidden max-md:block container ">
-          <div className="flex justify-between items-center gap-5">
-            <div className="items-center flex">
-              <IoMenu className="w-9 h-9 " />
+          <div className="flex  gap-5">
+            <div className=" flex ">
+              <IoMenu className="w-9 h-9 " onClick={handledropdown} />
+              {dropDown && <div className="absolute z-30 w-full top-0 left-0 mt-[200px] px-10 pb-10  bg-white"><Menu /></div>}
             </div>
             <div className="flex items-center relative w-full">
               <input

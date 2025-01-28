@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useRef, useState } from "react";
 
 import { ApiCart } from "./ApiCart";
 import { ReactSVG } from "react-svg";
@@ -40,7 +40,26 @@ const Cards: React.FC<props> = ({
       return prevIndex < 0 ? stop - start - 4 : prevIndex;
     });
   };
+  const touchStartX = useRef(0);
+  const touchEndX = useRef(0);
+  const handleTouchStart = (e: React.TouchEvent) => {
+    touchStartX.current = e.touches[0].clientX;
+  };
 
+  const handleTouchMove = (e: React.TouchEvent) => {
+    touchEndX.current = e.touches[0].clientX;
+  };
+
+  const handleTouchEnd = () => {
+    if (touchStartX.current - touchEndX.current > 50) {
+      // Kaydırma sola
+      if (currentIndex < 5 - 1) setCurrentIndex(currentIndex + 1);
+    }
+    if (touchStartX.current - touchEndX.current < -50) {
+      // Kaydırma sağa
+      if (currentIndex > 0) setCurrentIndex(currentIndex - 1);
+    }
+  };
   return (
     <div
       className={`container flex flex-col  mt-[140px] max-sm:mt-[100px] overflow-hidden ${
@@ -59,10 +78,7 @@ const Cards: React.FC<props> = ({
           <div>
             {timer && (
               <div className="max-xs:pl-[0px]">
-                <div
-                  id="timer-container"
-                  className="text-center mr-5 "
-                >
+                <div id="timer-container" className="text-center mr-5 ">
                   <div className="flex justify-center items-center space-x-4 max-md:space-x-2 max-sm:space-x-1  ">
                     <div className="text-center">
                       <h3 className="text-[12px] font-popins font-medium">
@@ -148,8 +164,11 @@ const Cards: React.FC<props> = ({
       <div
         className="flex transition-transform duration-700 ease-in-out  gap-[15px]"
         style={{
-          transform: `translateX(-${currentIndex * 250}px)`,
+          transform: `${carousel && `translateX(-${currentIndex * 250}px)`}`,
         }}
+        onTouchStart={handleTouchStart}
+        onTouchMove={handleTouchMove}
+        onTouchEnd={handleTouchEnd}
       >
         <ApiCart flexWrap={wrap} start={start} stop={stop} />
       </div>

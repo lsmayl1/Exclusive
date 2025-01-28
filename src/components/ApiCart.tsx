@@ -36,10 +36,20 @@ interface props {
 }
 export const ApiCart: React.FC<props> = ({ start, stop, flexWrap }) => {
   const [products, setProducts] = useState<product[]>([]);
-
+  const [watchlist, setWatchList] = useState<product[]>([]);
   const [selectedColors, setSelectedColors] = useState<{
     [key: number]: ProductColor | null;
   }>({});
+
+  const handleWatchlist = (product: product) => {
+    setWatchList((prevWatchList) => {
+      if (prevWatchList.some((item) => item.id === product.id)) {
+        return prevWatchList.filter((item) => item.id !== product.id);
+      } else {
+        return [...prevWatchList, product];
+      }
+    });
+  };
 
   const handleColorSelect = (productId: number, color: ProductColor) => {
     setSelectedColors((prevColors) => ({
@@ -101,8 +111,9 @@ export const ApiCart: React.FC<props> = ({ start, stop, flexWrap }) => {
             <div className="absolute top-[5%] right-[5%]">
               <div className="gap-[6px] flex flex-col max-xs:gap-1">
                 <div className=" bg-white w-[34px] h-[34px] rounded-full items-center flex flex-col justify-center max-xs:w-[25px] max-xs:h-[25px]">
-                  <button>
-                    <CartHeart prop={"max-xs:w-4"} />
+                  <button onClick={() => handleWatchlist(product)}>
+                  <CartHeart prop={watchlist.some((item)=> item.id === product.id)? "fill-red-500" :""} stroke={watchlist.some((item)=> item.id === product.id)? "red" :"black"} />
+                   
                   </button>
                 </div>
                 <div className=" bg-white w-[34px] h-[34px] rounded-full items-center flex flex-col justify-center max-xs:w-[25px] max-xs:h-[25px]">

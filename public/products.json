@@ -288,5 +288,115 @@
 		}
 	
 	
+	],
+	"categories":[
+		{
+			"id":1,
+			"name" : "Woman’s Fashion",
+			"subcategories":[
+				{"id": 2, "name": "Clothing",
+				"subcategories": [
+					{ "id": 3, "name": "Dresses","subcategories":[
+						{"id":45,"name":"SmartWatch"}
+					] },
+					{ "id": 4, "name": "Blouses & Shirts" },
+					{ "id": 5, "name": "T-Shirts & Tops" },
+					{ "id": 6, "name": "Pants & Trousers" },
+					{ "id": 7, "name": "Skirts" },
+					{ "id": 8, "name": "Jackets & Coats" }
+				  ]},
+				  {"id": 2, "name": "Ismo",
+				  "subcategories": [
+					  { "id": 3, "name": "Dresses" },
+					  { "id": 4, "name": "Blouses & Shirts" },
+					  { "id": 5, "name": "T-Shirts & Tops" },
+					  { "id": 6, "name": "Pants & Trousers" },
+					  { "id": 7, "name": "Skirts" },
+					  { "id": 8, "name": "Jackets & Coats" }
+					]}
+					,
+				  {"id": 2, "name": "Ismo",
+				  "subcategories": [
+					  { "id": 3, "name": "Dresses" },
+					  { "id": 4, "name": "Blouses & Shirts" },
+					  { "id": 5, "name": "T-Shirts & Tops" },
+					  { "id": 6, "name": "Pants & Trousers" },
+					  { "id": 7, "name": "Skirts" },
+					  { "id": 8, "name": "Jackets & Coats" }
+					]}
+			]
+		},
+		{
+			"id":1,
+			"name" : "Woman’s Fashion",
+			"subcategories":[
+				{"id": 2, "name": "Clothing",
+				"subcategories": [
+					{ "id": 3, "name": "Dresses","subcategories":[
+						{"id":45,"name":"SmartWatch"}
+					] },
+					{ "id": 4, "name": "Blouses & Shirts" },
+					{ "id": 5, "name": "T-Shirts & Tops" },
+					{ "id": 6, "name": "Pants & Trousers" },
+					{ "id": 7, "name": "Skirts" },
+					{ "id": 8, "name": "Jackets & Coats" }
+				  ]},
+				  {"id": 2, "name": "Ismo",
+				  "subcategories": [
+					  { "id": 3, "name": "Dresses" },
+					  { "id": 4, "name": "Blouses & Shirts" },
+					  { "id": 5, "name": "T-Shirts & Tops" },
+					  { "id": 6, "name": "Pants & Trousers" },
+					  { "id": 7, "name": "Skirts" },
+					  { "id": 8, "name": "Jackets & Coats" }
+					]}
+					,
+				  {"id": 2, "name": "Ismo",
+				  "subcategories": [
+					  { "id": 3, "name": "Dresses" },
+					  { "id": 4, "name": "Blouses & Shirts" },
+					  { "id": 5, "name": "T-Shirts & Tops" },
+					  { "id": 6, "name": "Pants & Trousers" },
+					  { "id": 7, "name": "Skirts" },
+					  { "id": 8, "name": "Jackets & Coats" }
+					]}
+			]
+		},
+		{
+			"id":1,
+			"name" : "Woman’s Fashion",
+			"subcategories":[
+				{"id": 2, "name": "Clothing",
+				"subcategories": [
+					{ "id": 3, "name": "Dresses","subcategories":[
+						{"id":45,"name":"SmartWatch"}
+					] },
+					{ "id": 4, "name": "Blouses & Shirts" },
+					{ "id": 5, "name": "T-Shirts & Tops" },
+					{ "id": 6, "name": "Pants & Trousers" },
+					{ "id": 7, "name": "Skirts" },
+					{ "id": 8, "name": "Jackets & Coats" }
+				  ]},
+				  {"id": 2, "name": "Ismo",
+				  "subcategories": [
+					  { "id": 3, "name": "Dresses" },
+					  { "id": 4, "name": "Blouses & Shirts" },
+					  { "id": 5, "name": "T-Shirts & Tops" },
+					  { "id": 6, "name": "Pants & Trousers" },
+					  { "id": 7, "name": "Skirts" },
+					  { "id": 8, "name": "Jackets & Coats" }
+					]}
+					,
+				  {"id": 2, "name": "Ismo",
+				  "subcategories": [
+					  { "id": 3, "name": "Dresses" },
+					  { "id": 4, "name": "Blouses & Shirts" },
+					  { "id": 5, "name": "T-Shirts & Tops" },
+					  { "id": 6, "name": "Pants & Trousers" },
+					  { "id": 7, "name": "Skirts" },
+					  { "id": 8, "name": "Jackets & Coats" }
+					]}
+			]
+		}
 	]
 }

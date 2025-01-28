@@ -69,39 +69,49 @@ export const ProductDetailsSection = () => {
   }, []);
 
   return (
-    <div className="container">
+    <div className="container flex flex-col">
       <Breadcrumb paths={breadcrump} />
-      <div className="flex mt-[80px] gap-[70px]">
-        <div className="flex gap-[30px] flex-[60%]">
-          <div className="flex flex-col gap-4">
+      <div className="flex mt-[80px] gap-[70px] max-xl:gap-[40px] justify-center max-md:flex-col  ">
+        <div className="flex gap-[30px] w-1/2 max-xl:gap-4 max-lg:flex-col max-md:w-full ">
+          <div className="flex flex-col justify-between max-xl:gap-2 max-lg:flex-row max-lg:order-2">
             {Array.from({ length: 4 }).map((_, index) => (
               <div
                 key={index}
-                className=" w-full h-[138px] flex justify-center items-center bg-F5F5F5 rounded"
+                className=" flex justify-center items-center bg-F5F5F5 rounded"
               >
-                <img src={product?.images[0]} className="p-6" alt="" />
+                <img
+                  src={product?.images[0]}
+                  className="p-6 max-xl:w-[200px]"
+                  alt=""
+                />
               </div>
             ))}
           </div>
-          <div className="flex bg-F5F5F5 rounded justify-center items-center w-full">
-            <img src={product?.images[0]} className=" z-40" alt="" />
+          <div className="flex bg-F5F5F5 rounded justify-center items-center w-full h-full max-lg:order-1 max-md:p-20">
+            <img
+              src={product?.images[0]}
+              className="z-40 max-xl:w-[250px] "
+              alt=""
+            />
           </div>
         </div>
-        <div className="flex flex-col gap-4 flex-[20%]">
+
+        <div className="flex flex-col gap-4 w-1/4  max-lg:gap-2 max-md:w-full">
           <h4>{product?.name}</h4>
           <div className="flex flex-col ">
             <div className="flex  ">
               <RatingStar starcount={product?.rating?.stars} />
-
-              <div className="mb-2.5 flex items-center text-center justify-center">
-                <h4>({product?.id} Reviews) | In Stock</h4>
+              <div className="flex items-center text-center justify-center">
+                <h4 className="max-xl:text-[14px] max-lg:text-[10px] truncate ">
+                  ({product?.rating.reviews} Reviews) | In Stock
+                </h4>
               </div>
             </div>
-            <div className="flex flex-col gap-6">
-              <h4 className="font-inter font-semibold text-[24px]">
+            <div className="flex flex-col gap-6 max-lg:gap-2">
+              <h4 className="font-inter font-semibold text-[24px] max-lg:text-[16px]">
                 ${product?.price}
               </h4>
-              <p>
+              <p className="max-lg:text-[12px]">
                 PlayStation 5 Controller Skin High quality vinyl with air
                 channel adhesive for easy bubble free install & mess free
                 removal Pressure sensitive.
@@ -148,11 +158,11 @@ export const ProductDetailsSection = () => {
           )}
 
           {product?.sizes?.length ? (
-            <div className="flex items-center gap-6 ">
+            <div className="flex items-center gap-6 max-lg:gap-3">
               <h4>Size:</h4>
               {product?.sizes.map((size, index) => (
                 <div key={index} className="flex items-center gap-4">
-                  <button className="w-8 h-8 border rounded flex justify-center items-center font-poppins font-medium text-[14px]">
+                  <button className="p-2 max-md:p-1 max-md:text-[12px] border rounded flex justify-center items-center font-poppins font-medium text-[14px]">
                     {size}
                   </button>
                 </div>
@@ -162,16 +172,17 @@ export const ProductDetailsSection = () => {
             ""
           )}
 
-          <div className="flex items-center justify-center gap-4">
+          <div className="flex items-center justify-between">
             <div className="flex">
               <button
                 onClick={() =>
                   setQuantity((prev) => (prev > 0 ? prev - 1 : prev))
                 }
-                className="w-[40px] h-[44px] border border-black rounded-l-lg flex justify-center items-center"
+                className=" border border-black rounded-l flex justify-center items-center"
               >
                 <svg
-                  width="24"
+                  className="max-lg:w-4"
+                  width="20"
                   height="24"
                   viewBox="0 0 24 24"
                   fill="none"
@@ -187,14 +198,15 @@ export const ProductDetailsSection = () => {
               </button>
               <input
                 value={quantity}
-                className=" w-[80px] border h-[44px] border-black px-8 "
+                className="border py-2 w-[60px] max-xl:w-[30px] max-xl:py-1  border-black text-center max-lg:py-0 "
                 type="text"
               />
               <button
                 onClick={() => setQuantity(quantity + 1)}
-                className="w-[40px] h-[44px] border rounded-r-lg border-black flex justify-center items-center "
+                className=" border rounded-r border-black flex justify-center items-center "
               >
                 <svg
+                  className="w-5 max-lg:w-4"
                   width="24"
                   height="24"
                   viewBox="0 0 24 24"
@@ -210,10 +222,10 @@ export const ProductDetailsSection = () => {
                 </svg>
               </button>
             </div>
-            <button className="w-[165px] h-[44px] rounded bg-DB4444 text-white">
+            <button className="py-2 rounded w-[100px] max-md:w-full max-md:mx-4 bg-DB4444 max-xl:py-1 text-white max-lg:text-[14px] max-lg:py-[2px] max-lg:w-[60px]">
               Buy Now
             </button>
-            <button className="border border-black w-[40px] rounded  flex h-[40px] justify-center items-center">
+            <button className="border border-black rounded  flex p-2 justify-center items-center max-lg:p-1">
               <svg
                 width="20"
                 height="18"
@@ -231,8 +243,8 @@ export const ProductDetailsSection = () => {
               </svg>
             </button>
           </div>
-          <div className="w-full h-[180px] border rounded border-black">
-            <div className="py-6 px-4 flex  items-center gap-4">
+          <div className="w-full  border rounded border-black">
+            <div className="py-6 px-4 flex  items-center gap-4 max-xl:py-1 max-xl:px-3">
               <svg
                 width="40"
                 height="40"
@@ -298,14 +310,16 @@ export const ProductDetailsSection = () => {
                 </defs>
               </svg>
               <div>
-                <h4 className="font-poppins font-medium">Free Delivery</h4>
-                <h5 className="font-poppins font-medium text-[12px]">
+                <h4 className="font-poppins font-medium max-xl:text-[14px] max-lg:text-[12px]">
+                  Free Delivery
+                </h4>
+                <h5 className="font-poppins font-medium text-[12px] max-xl:text-[10px] max-lg:text-[8px]">
                   Enter your postal code for Delivery Availability
                 </h5>
               </div>
             </div>
             <div className="border-[0.5px] border-gray-700"></div>
-            <div className="py-6 px-4 flex  items-center gap-4">
+            <div className="py-6 px-2 flex  items-center gap-4 max-xl:py-1 max-xl:px-3">
               <svg
                 width="40"
                 height="40"
@@ -337,8 +351,10 @@ export const ProductDetailsSection = () => {
               </svg>
 
               <div>
-                <h4 className="font-poppins font-medium">Return Delivery</h4>
-                <h5 className="font-poppins font-medium text-[12px]">
+                <h4 className="font-poppins font-medium max-xl:text-[14px] max-lg:text-[12px]">
+                  Return Delivery
+                </h4>
+                <h5 className="font-poppins font-medium text-[12px] max-xl:text-[10px] max-lg:text-[8px]">
                   Free 30 Days Delivery Returns. Details
                 </h5>
               </div>

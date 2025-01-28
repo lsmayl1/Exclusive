@@ -9,15 +9,13 @@ import { CategoriesAds } from "../components/CategoriesAds";
 import { Featured } from "../components/Featured";
 import { Services } from "../components/Services";
 import { Footer } from "../components/Footer";
+import { Menu } from "../components/Menu";
 function Home() {
   return (
-    <div className=" border border-black">
+    <div className="">
       <TopHeader />
-
       <Header />
-
       <Hero />
-
       <Cards
         wrap="nowrap"
         cardcount={{ start: 0, stop: 10 }}
@@ -28,9 +26,7 @@ function Home() {
         border={false}
         subtext="Flash Sales"
       />
-
       <Category />
-
       <Cards
         wrap="nowrap"
         text="This Month"
@@ -41,22 +37,19 @@ function Home() {
         border={false}
         cardcount={{ start: 0, stop: 4 }}
       />
-
       <CategoriesAds />
-
       <Cards
         wrap="wrap"
         text="Our Products"
         timer={false}
         subtext={"Explore Our Products"}
-        carousel={true}
-        vapbutton={true}
+        carousel={false}
+        vapbutton={false}
         border={false}
         cardcount={{ start: 8, stop: 16 }}
       />
-     
       <Featured />
- 
+
       <Services />
 
       <Footer />

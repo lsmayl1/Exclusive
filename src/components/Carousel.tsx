@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useRef, useState } from "react";
 import iphone from "../assets/images/Iphone_14.png";
 import AppleLogo from "../assets/images/AppleLogo.png";
 import { NavLink } from "react-router-dom";
@@ -9,14 +9,38 @@ function Carousel() {
   const goToSlide = (index: React.SetStateAction<number>) => {
     setCurrentIndex(index);
   };
+
+  const touchStartX = useRef(0);
+  const touchEndX = useRef(0);
+  const handleTouchStart = (e: React.TouchEvent) => {
+    touchStartX.current = e.touches[0].clientX;
+  };
+
+  const handleTouchMove = (e: React.TouchEvent) => {
+    touchEndX.current = e.touches[0].clientX;
+  };
+
+  const handleTouchEnd = () => {
+    if (touchStartX.current - touchEndX.current > 50) {
+      // Kaydırma sola
+      if (currentIndex < 5 - 1) setCurrentIndex(currentIndex + 1);
+    }
+    if (touchStartX.current - touchEndX.current < -50) {
+      // Kaydırma sağa
+      if (currentIndex > 0) setCurrentIndex(currentIndex - 1);
+    }
+  };
   0;
   return (
     <div className="relative overflow-hidden w-full 2xl:w-[1000px] pl-[40px] max-md:pl-0 pt-[30px] max-lg:pt-[20px]">
       <div
         className="flex transition-transform duration-500 ease-in-out 2xl:justify-center"
         style={{ transform: `translateX(-${currentIndex * 100}%)` }}
+        onTouchStart={handleTouchStart}
+        onTouchMove={handleTouchMove}
+        onTouchEnd={handleTouchEnd}
       >
-        {Array.from({ length: 3 }).map((_, index) => (
+        {Array.from({ length: 5 }).map((_, index) => (
           <div
             key={index}
             className="flex-shrink-0 w-full 2xl:w-[1000px] h-full  bg-black  flex justify-between relative"
@@ -45,9 +69,7 @@ function Carousel() {
                 </NavLink>
               </div>
             </div>
-            <div
-              className="absolute right-0 pr-10 pt-5 z-1 pb-5 max-lg:pt-[50px] max-lg:pr-3 max-sm:pt-[60px] max-xs:pt-7 "
-            >
+            <div className="absolute right-0 pr-10 pt-5 z-1 pb-5 max-lg:pt-[50px] max-lg:pr-3 max-sm:pt-[60px] max-xs:pt-7 ">
               <img
                 src={iphone}
                 alt=""
